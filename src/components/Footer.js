@@ -3,11 +3,11 @@ import {socials} from "../portfolio";
 
 export default function Footer() {
   return (
-    <footer className="lux-footer">
-      <div className="lux-footer-inner">
-        <span className="lux-logo">ER</span>
+    <footer className="fx-footer">
+      <div className="fx-footer-inner">
+        <span className="fx-logo">ER</span>
         <p>© 2026 Elias Roro · Designed & built with intent</p>
-        <div className="lux-footer-socials">
+        <div className="fx-footer-socials">
           {socials.map(s => (
             <a
               key={s.name}

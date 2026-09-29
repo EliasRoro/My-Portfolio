@@ -4,18 +4,18 @@ import Reveal from "./Reveal";
 
 export default function About() {
   return (
-    <section className="lux-section" id="profile">
-      <div className="lux-container">
+    <section className="fx-section" id="profile">
+      <div className="fx-container">
         <Reveal>
-          <div className="lux-eyebrow">01 · Profile</div>
+          <div className="fx-eyebrow">01 · Profile</div>
         </Reveal>
         <Reveal delay={100}>
-          <p className="lux-about-statement">
+          <p className="fx-about-statement">
             {about.statement.split(" — ")[0]} —{" "}
-            <em>{about.statement.split(" — ")[1]}</em>
+            <strong>{about.statement.split(" — ")[1]}</strong>
           </p>
         </Reveal>
-        <div className="lux-about-grid">
+        <div className="fx-about-grid">
           <Reveal delay={150}>
             <div>
               {about.paragraphs.map((p, i) => (
@@ -24,9 +24,9 @@ export default function About() {
             </div>
           </Reveal>
           <Reveal delay={250}>
-            <div className="lux-facts">
+            <div className="fx-facts">
               {about.facts.map(f => (
-                <div className="lux-fact" key={f.label}>
+                <div className="fx-fact" key={f.label}>
                   <span className="f-label">{f.label}</span>
                   <span className="f-value">{f.value}</span>
                 </div>

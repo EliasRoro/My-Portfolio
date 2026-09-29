@@ -1,5 +1,5 @@
 import React from "react";
-import "./luxury.css";
+import "./future.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Marquee from "./components/Marquee";
@@ -13,7 +13,8 @@ import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="lux">
+    <div className="fx">
+      <div className="fx-stars" aria-hidden="true" />
       <Navbar />
       <main>
         <Hero />

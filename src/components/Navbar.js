@@ -19,13 +19,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className={`lux-nav${scrolled ? " scrolled" : ""}`}>
-      <div className="lux-nav-inner">
-        <a href="#top" className="lux-logo">
+    <header className={`fx-nav${scrolled ? " scrolled" : ""}`}>
+      <div className="fx-nav-inner">
+        <a href="#top" className="fx-logo">
           ER
         </a>
         <nav>
-          <ul className="lux-nav-links">
+          <ul className="fx-nav-links">
             {links.map(l => (
               <li key={l.href}>
                 <a href={l.href}>{l.label}</a>
@@ -33,7 +33,7 @@ export default function Navbar() {
             ))}
           </ul>
         </nav>
-        <a href="#contact" className="lux-nav-cta">
+        <a href="#contact" className="fx-nav-cta">
           Let's Talk
         </a>
       </div>

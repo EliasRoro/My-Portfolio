@@ -4,30 +4,30 @@ import Reveal from "./Reveal";
 
 export default function Experience() {
   return (
-    <section className="lux-section" id="experience">
-      <div className="lux-container">
+    <section className="fx-section" id="experience">
+      <div className="fx-container">
         <Reveal>
-          <div className="lux-eyebrow">03 · Experience</div>
+          <div className="fx-eyebrow">03 · Experience</div>
         </Reveal>
         <Reveal delay={100}>
-          <h2 className="lux-title">
-            Where I've <em>delivered</em>
+          <h2 className="fx-title">
+            Where I've <span className="neon">delivered</span>
           </h2>
         </Reveal>
         <Reveal delay={160}>
-          <p className="lux-lead">
+          <p className="fx-lead">
             From banking data pipelines to enterprise IT — every role sharpened
             the same instinct: quality is engineered, never inspected in.
           </p>
         </Reveal>
-        <div className="lux-timeline">
+        <div className="fx-timeline">
           {experience.map((job, i) => (
             <Reveal key={job.company} delay={i * 80}>
-              <article className={`lux-job${job.featured ? " featured" : ""}`}>
-                <div className="lux-job-date">{job.date}</div>
-                <h3 className="lux-job-role">{job.role}</h3>
-                <div className="lux-job-company">{job.company}</div>
-                <p className="lux-job-desc">{job.desc}</p>
+              <article className={`fx-job${job.featured ? " featured" : ""}`}>
+                <div className="fx-job-date">{job.date}</div>
+                <h3 className="fx-job-role">{job.role}</h3>
+                <div className="fx-job-company">{job.company}</div>
+                <p className="fx-job-desc">{job.desc}</p>
                 <ul>
                   {job.bullets.map((b, j) => (
                     <li key={j}>{b}</li>
